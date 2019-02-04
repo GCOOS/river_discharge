@@ -1,5 +1,5 @@
 <template>
-  <div class="canvas">
+  <div>
     <b-container>
       <h1 style="text-align:center;">River Discharge</h1>
       <br>
@@ -9,14 +9,14 @@
           <ul>
             <li>
               <a
-                data-mce-href="http://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
+                data-mce-href="https://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
                 href="http://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
                 target="_blank"
               >&nbsp;NetCDF File</a>
             </li>
             <li>
               <a
-                data-mce-href="http://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
+                data-mce-href="https://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
                 href="http://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
                 target="_blank"
               >&nbsp;ASCII file</a>&nbsp;(tar.z)
@@ -26,10 +26,10 @@
       </b-row>
       <b-row>
         <b-col>
-          <div id="gom" style="width:100%; height:650px;">
+          <div id="gommap" style="width:100%; height:650px;">
             <div
               class="gm-style"
-              style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"
+              style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 10;"
             ></div>
           </div>
           <div id="floating-panel">
@@ -111,10 +111,7 @@
   </div>
 </template>
 
-
-
 <style>
-@import "@/assets/css/main.css";
 .centered span {
   display: none;
 }

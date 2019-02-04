@@ -629,7 +629,7 @@ function initMap() {
     //mapTypeId: google.maps.MapTypeId.HYBRID
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
-  map = new google.maps.Map(document.getElementById("gom"), mapOptions);
+  map = new google.maps.Map(document.getElementById("gommap"), mapOptions);
   setMarkers(test_id);
 
   var onChangeHandler = function () {

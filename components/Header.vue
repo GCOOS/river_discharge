@@ -5,7 +5,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse is-nav id="nav-collapse">
         <b-navbar-brand href="http://products.gcoos.org">
-          <i class="fas fa-home"></i>
+          <i class="fas fa-home"></i>&nbsp;
         </b-navbar-brand>
         <b-navbar-nav>
           <b-nav-item href="/river_discharge">
