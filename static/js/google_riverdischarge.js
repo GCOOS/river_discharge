@@ -690,7 +690,7 @@ function setMarkers(test_id) {
       '<div id="content">' +
       '<div id="siteNotice">' +
       "<p><b> Site id : </b>" +
-      '<a href="http://geo.gcoos.org/data/riverdischarge/ascii/' +
+      '<a href="https://geo.gcoos.org/data/riverdischarge/ascii/' +
       spl_usage +
       '" target="black">' +
       site_id +
@@ -707,10 +707,10 @@ function setMarkers(test_id) {
       "N, " +
       mouth_lon +
       "E</p>" +
-      '<a href="http://geo.gcoos.org/data/riverdischarge/png/' +
+      '<a href="https://geo.gcoos.org/data/riverdischarge/png/' +
       spl_usage +
       '.png" target=_blank>' +
-      '<img src="http://geo.gcoos.org/data/riverdischarge/png/' +
+      '<img src="https://geo.gcoos.org/data/riverdischarge/png/' +
       spl_usage +
       '.png" WIDTH=60% HEIGHT=60% ALIGN=texttop></a>';
     "</div>" + "</div>";
