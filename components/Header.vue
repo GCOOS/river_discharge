@@ -8,7 +8,7 @@
           <i class="fas fa-home"></i>
         </b-navbar-brand>
         <b-navbar-nav>
-          <b-nav-item href="/hab">
+          <b-nav-item href="/river_discharge">
             <i class="fas fa-map-marked-alt"></i>&nbsp;Map
           </b-nav-item>
         </b-navbar-nav>

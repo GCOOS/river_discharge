@@ -1,10 +1,8 @@
-# Harmful Algal Bloom Species Time-Series Data Viewer
-
-> Harmful Algal Blooms in the Gulf of Mexico
+# River Discharge Map and Chart
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
@@ -20,4 +18,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-

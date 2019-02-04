@@ -649,9 +649,9 @@ function initMap() {
 }
 
 function setMarkers(test_id) {
-  pin_blu = new google.maps.MarkerImage("/img/blue.png");
-  pin_red = new google.maps.MarkerImage("/img/red.png");
-  pin_grn = new google.maps.MarkerImage("/img/green.png");
+  pin_blu = new google.maps.MarkerImage("img/blue.png");
+  pin_red = new google.maps.MarkerImage("img/red.png");
+  pin_grn = new google.maps.MarkerImage("img/green.png");
 
   for (i = 0; i < test_id.length; i++) {
     var site_id = test_id[i][0];
