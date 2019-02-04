@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    build: ./
+    image: skobara/river_discharge
+    container_name: river_discharge
+    ports:
+      - "8004:80"
+    volumes:
+      - "./dist/:/usr/share/nginx/html"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:geo.gcoos.org;PathPrefixStrip:/river_discharge;ReplacePathRegex: ^/river_discharge/(.*) /$$1"
+      - "traefik.port=80"
+      - "traefik.docker.network=geo_net"
+    networks:
+      - geo_net
+
+networks:
+  geo_net:
+    external: true
