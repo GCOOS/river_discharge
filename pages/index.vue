@@ -111,7 +111,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .centered span {
   display: none;
 }
