@@ -111,6 +111,14 @@
   </div>
 </template>
 
+<script>
+if (process.browser) {
+  window.onNuxtReady(app => {
+    initMap();
+  });
+}
+</script>
+
 <style scoped>
 .centered span {
   display: none;
