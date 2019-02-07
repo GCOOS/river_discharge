@@ -1,13 +1,12 @@
 module.exports = {
-  mode: "spa",
+  mode: "universal",
 
   /*
    ** Headers of the page
    */
   head: {
     title: "River Discharge to the Gulf of Mexico",
-    meta: [
-      {
+    meta: [{
         charset: "utf-8"
       },
       {
@@ -20,8 +19,7 @@ module.exports = {
         content: "River Discharge Datasets for the Gulf of Mexico"
       }
     ],
-    link: [
-      {
+    link: [{
         rel: "icon",
         type: "image/x-icon",
         href: "favicon.ico"
@@ -34,8 +32,7 @@ module.exports = {
       {
         /* Material Design Icon */
         rel: "stylesheet",
-        href:
-          "https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css"
+        href: "https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css"
       },
       {
         /* Google Material Icons */
@@ -46,61 +43,51 @@ module.exports = {
         /* Font Awesome */
         rel: "stylesheet",
         href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css",
-        integrity:
-          "sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP",
+        integrity: "sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP",
         crossorigin: "anonymous"
       },
       {
         /* Leaflet */
         rel: "stylesheet",
         href: "https://unpkg.com/leaflet@1.3.4/dist/leaflet.css",
-        integrity:
-          "sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==",
+        integrity: "sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==",
         crossorigin: ""
       },
       {
         /* Leaflet Fullscreen Button */
         rel: "stylesheet",
-        href:
-          "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
+        href: "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
       },
       {
         /* Leaflet Marker Cluster */
         rel: "stylesheet",
-        href:
-          "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css"
+        href: "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css"
       },
       {
         /* Leaflet Marker Cluster 2 */
         rel: "stylesheet",
-        href:
-          "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css"
+        href: "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css"
       }
     ],
-    script: [
-      {
+    script: [{
         /* Leaflet */
         src: "https://unpkg.com/leaflet@1.3.4/dist/leaflet.js",
-        integrity:
-          "sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==",
+        integrity: "sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==",
         crossorigin: ""
       },
       {
         /* ESRI Leaflet */
         src: "https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js",
-        integrity:
-          "sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g==",
+        integrity: "sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g==",
         crossorigin: ""
       },
       {
         /* Leaflet Fullscreen */
-        src:
-          "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"
+        src: "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"
       },
       {
         /* Leaflet Omnivore */
-        src:
-          "//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"
+        src: "//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"
       },
       {
         /* jQuery */
@@ -119,8 +106,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    {
+  css: [{
       src: "~assets/css/menu.css"
     },
     {
@@ -137,12 +123,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    {
-      src: "~plugins/ga.js",
-      ssr: false
-    }
-  ],
+  plugins: [{
+    src: "~plugins/ga.js",
+    ssr: false
+  }],
 
   /*
    ** Nuxt.js modules
@@ -151,7 +135,12 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
     // Doc: https://bootstrap-vue.js.org/docs/
-    "bootstrap-vue/nuxt"
+    "bootstrap-vue/nuxt",
+    /*
+    ['nuxt-google-maps-module', {
+      key: 'AIzaSyAT-25-xVEY8DczyQ3Uvk81e0DpXO6fCOY&', // Default
+    }],
+    */
   ],
   /*
    ** Axios module configuration

@@ -101,6 +101,7 @@
         </b-col>
       </b-row>
     </b-container>
+    
     <script
       async
       defer
@@ -112,10 +113,10 @@
 </template>
 
 <script>
-if (process.browser) {
-  window.onNuxtReady(app => {
+export default {
+mounted() {
     initMap();
-  });
+  }
 }
 </script>
 
