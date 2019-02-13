@@ -4,6 +4,7 @@ services:
     build: ./
     image: skobara/river_discharge
     container_name: river_discharge
+    restart: always
     ports:
       - "8004:80"
     volumes:
