@@ -20,103 +20,60 @@ module.exports = {
       }
     ],
     link: [{
-        rel: "icon",
-        type: "image/x-icon",
-        href: "favicon.ico"
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/ssh/favicon.ico'
       },
       {
         /* Google Font */
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Lato:400,700"
+        href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
       },
       {
-        /* Material Design Icon */
+        /* Adobe Proxima Nova */
         rel: "stylesheet",
-        href: "https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css"
-      },
-      {
-        /* Google Material Icons */
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+        href: "https://use.typekit.net/pel5bpx.css"
       },
       {
         /* Font Awesome */
         rel: "stylesheet",
-        href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css",
-        integrity: "sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP",
+        href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css",
+        integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf",
         crossorigin: "anonymous"
-      },
-      {
-        /* Leaflet */
-        rel: "stylesheet",
-        href: "https://unpkg.com/leaflet@1.3.4/dist/leaflet.css",
-        integrity: "sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==",
-        crossorigin: ""
-      },
-      {
-        /* Leaflet Fullscreen Button */
-        rel: "stylesheet",
-        href: "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
-      },
-      {
-        /* Leaflet Marker Cluster */
-        rel: "stylesheet",
-        href: "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css"
-      },
-      {
-        /* Leaflet Marker Cluster 2 */
-        rel: "stylesheet",
-        href: "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css"
       }
     ],
     script: [{
-        /* Leaflet */
-        src: "https://unpkg.com/leaflet@1.3.4/dist/leaflet.js",
-        integrity: "sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==",
-        crossorigin: ""
+        /* jQuery for ajax */
+        src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
       },
       {
-        /* ESRI Leaflet */
-        src: "https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js",
-        integrity: "sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g==",
-        crossorigin: ""
+        src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
       },
       {
-        /* Leaflet Fullscreen */
-        src: "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"
+        /* moment timezone */
+        src: "https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone-with-data.min.js"
       },
       {
-        /* Leaflet Omnivore */
-        src: "//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"
-      },
-      {
-        /* jQuery */
-        src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        /* d3 */
+        src: "https://d3js.org/d3.v5.min.js"
       }
     ]
   },
-
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: "#fff"
+    color: '#00a2cc'
   },
 
   /*
    ** Global CSS
    */
   css: [{
-      src: "~assets/css/menu.css"
+      src: "~assets/css/webflow.css"
     },
     {
-      src: "~assets/css/grid-only.css"
-    },
-    {
-      src: "~assets/css/footer.css"
-    },
-    {
-      src: "~assets/css/main.css"
+      src: '~assets/css/main.css'
     }
   ],
 
@@ -124,7 +81,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [{
-    src: "~plugins/ga.js",
+    src: '~plugins/ga.js',
     ssr: false
   }],
 
@@ -132,22 +89,19 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
-    // Doc: https://bootstrap-vue.js.org/docs/
+    "@nuxtjs/pwa",
+    "@nuxtjs/sentry",
+    // cache with options
+    [
+      "@nuxtjs/component-cache",
+      {
+        max: 10000,
+        maxAge: 1000 * 60 * 60
+      }
+    ],
     "bootstrap-vue/nuxt",
-    /*
-    ['nuxt-google-maps-module', {
-      key: 'AIzaSyAT-25-xVEY8DczyQ3Uvk81e0DpXO6fCOY&', // Default
-    }],
-    */
   ],
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
   /*
    ** Bootstrap-vue configuration
    */
@@ -155,8 +109,13 @@ module.exports = {
     bootstrapCSS: true, // or false for customized CSS
     bootstrapVueCSS: true
   },
+
+  /*
+   ** Axios module configuration
+   */
+  axios: {},
   router: {
-    base: "/river_discharge/"
+    base: '/river_discharge/'
   },
 
   /*
@@ -166,6 +125,8 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+
+    }
   }
-};
+}

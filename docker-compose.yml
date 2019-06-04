@@ -6,13 +6,13 @@ services:
     container_name: river_discharge
     restart: always
     ports:
-      - "8004:80"
+      - "8004:3000"
     volumes:
-      - "./dist/:/usr/share/nginx/html"
+      - "./:/usr/src/app"
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:geo.gcoos.org;PathPrefixStrip:/river_discharge;ReplacePathRegex: ^/river_discharge/(.*) /$$1"
-      - "traefik.port=80"
+      - "traefik.frontend.rule=Host:geo.gcoos.org;PathPrefix:/river_discharge"
+      - "traefik.port=3000"
       - "traefik.docker.network=geo_net"
     networks:
       - geo_net

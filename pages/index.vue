@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="canvas">
     <b-container>
       <h1 style="text-align:center;">River Discharge</h1>
       <br>
@@ -101,7 +101,7 @@
         </b-col>
       </b-row>
     </b-container>
-    
+
     <script
       async
       defer
@@ -114,10 +114,10 @@
 
 <script>
 export default {
-mounted() {
+  mounted() {
     initMap();
   }
-}
+};
 </script>
 
 <style scoped>

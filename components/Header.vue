@@ -19,11 +19,17 @@
 
 <style>
 .menubar {
-  position: relative;
-  margin-top: 105px;
+  font-family: "proxima-nova", Roboto, sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  position: fixed;
+  /*  margin-top: 106px; */
+  top: 106px;
+  margin: 0;
+  padding: 0;
   height: auto;
   width: 100%;
-  z-index: 999;
+  z-index: 1999;
 }
 
 .oneline {
@@ -32,17 +38,30 @@
   background-color: #da880e;
 }
 /* Navbar setting */
-.navbar {
+.menubar .navbar {
   padding: 1px 12px !important;
 }
-.nav-link {
-  color: white !important;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 1) !important;
-}
 .bg-dark {
-  background-color: #0d4060 !important;
+  background-color: #093f61 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menubar {
+    top: 96px;
+    font-size: 16px;
+  }
+  .menubar .dropdown-toggle::after {
+    position: relative;
+    margin-left: 15px;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    border-top-width: 4px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .menubar {
+    top: 75px;
+  }
 }
 </style>
-
