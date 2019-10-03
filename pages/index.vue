@@ -2,7 +2,7 @@
   <div class="canvas">
     <b-container>
       <h1 style="text-align:center;">River Discharge</h1>
-      <br>
+      <br />
       <b-row>
         <b-col>
           <h3>Records from 61 rivers that discharge into the Gulf of Mexico</h3>
