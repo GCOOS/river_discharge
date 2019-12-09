@@ -9,11 +9,11 @@
         </b-navbar-brand>
         <b-navbar-nav>
           <b-nav-item href="/river_discharge/">
-            <i class="fas fa-map-marked-alt"></i>&nbsp;Map
+            <i class="fas fa-map-marked-alt"></i>&nbsp;Main
           </b-nav-item>
         </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>&nbsp;
+      </b-collapse> </b-navbar
+    >&nbsp;
   </div>
 </template>
 
