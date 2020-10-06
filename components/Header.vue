@@ -4,7 +4,7 @@
     <b-navbar toggleable="md" type="dark" variant="dark">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse is-nav id="nav-collapse">
-        <b-navbar-brand href="https://products.gcoos.org/category">
+        <b-navbar-brand href="/river_discharge/">
           <i class="fas fa-home"></i>&nbsp;
         </b-navbar-brand>
         <b-navbar-nav>

@@ -900,7 +900,7 @@ export default {
 
 <style scoped>
 .canvas {
-  font-size: 18px;
+  font-size: 20px;
 }
 .centered span {
   display: none;
