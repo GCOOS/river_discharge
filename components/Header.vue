@@ -4,13 +4,13 @@
     <b-navbar toggleable="md" type="dark" variant="dark">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse is-nav id="nav-collapse">
-        <b-navbar-brand href="http://products.gcoos.org">
+        <b-navbar-brand href="https://products.gcoos.org/category">
           <i class="fas fa-home"></i>&nbsp;
         </b-navbar-brand>
         <b-navbar-nav>
-          <b-nav-item href="/river_discharge/">
+          <!-- <b-nav-item href="/river_discharge/">
             <i class="fas fa-map-marked-alt"></i>&nbsp;Main
-          </b-nav-item>
+          </b-nav-item> -->
         </b-navbar-nav>
       </b-collapse> </b-navbar
     >&nbsp;

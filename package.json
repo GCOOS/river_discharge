@@ -11,22 +11,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.8.0",
-    "@nuxtjs/component-cache": "^1.1.5",
-    "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/pwa": "^3.0.0-beta.19",
-    "@nuxtjs/sentry": "^3.0.1",
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.1.0",
+    "@nuxtjs/component-cache": "^1.1.6",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
     "cross-env": "^5.2.1",
     "event-stream": "^4.0.1",
-    "nuxt": "^2.10.2",
+    "nuxt": "^2.14.6",
     "nuxt-google-maps-module": "^1.6.0",
-    "portal-vue": "^2.1.6"
+    "portal-vue": "^2.1.7"
   },
   "devDependencies": {
-    "jquery": "^3.4.1",
-    "node-fetch": "^2.6.0",
+    "jquery": "^3.5.1",
+    "node-fetch": "^2.6.1",
     "nodemon": "^1.19.4"
   }
 }

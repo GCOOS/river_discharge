@@ -1,36 +1,42 @@
 <template>
   <div class="canvas">
     <b-container>
-      <h1 style="text-align:center;">River Discharge</h1>
+      <h1 style="text-align: center">River Discharge</h1>
       <b-row>
-        <b-col>
+        <b-col style="text-align: center">
           <h3>Records from 61 rivers that discharge into the Gulf of Mexico</h3>
-          <ul>
-            <li>
-              <a
-                data-mce-href="https://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
-                href="http://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
-                target="_blank"
-                >&nbsp;NetCDF File</a
-              >
-            </li>
-            <li>
-              <a
-                data-mce-href="https://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
-                href="http://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
-                target="_blank"
-                >&nbsp;ASCII file</a
-              >&nbsp;(tar.z)
-            </li>
-          </ul>
+
+          <a
+            data-mce-href="https://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
+            href="http://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
+            target="_blank"
+            >&nbsp;NetCDF File</a
+          >
+          <br />
+          <a
+            data-mce-href="https://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
+            href="http://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
+            target="_blank"
+            >&nbsp;ASCII file</a
+          >&nbsp;(tar.z)
         </b-col>
       </b-row>
+    </b-container>
+    <b-container fluid>
       <b-row>
         <b-col>
-          <div id="gommap" style="width:100%; height:650px;">
+          <div id="gommap" class="map_canvas">
             <div
               class="gm-style"
-              style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 10;"
+              style="
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+              "
             ></div>
           </div>
           <div id="floating-panel">
@@ -122,7 +128,7 @@ export default {
           28.8853,
           -89.4456,
           "Mississippi R @ Tarbert Landing, MS",
-          "Mississippi"
+          "Mississippi",
         ],
         [
           "03045atc",
@@ -132,7 +138,7 @@ export default {
           29.3989,
           -91.3655,
           "Atachafalya @ Simmesport, LA",
-          "Atachafalya"
+          "Atachafalya",
         ],
         [
           "02292010",
@@ -142,7 +148,7 @@ export default {
           26.4499,
           -81.9905,
           "Caloosahatchee Canal",
-          "Caloosahatchee_Canal"
+          "Caloosahatchee_Canal",
         ],
         [
           "02296750",
@@ -152,7 +158,7 @@ export default {
           26.7091,
           -82.2624,
           "Peace R @ Arcadia, FL",
-          "Peace"
+          "Peace",
         ],
         [
           "02298880",
@@ -162,7 +168,7 @@ export default {
           26.7091,
           -82.2624,
           "Myakka R NR Laurel, FL",
-          "Myakka"
+          "Myakka",
         ],
         [
           "02310525",
@@ -172,7 +178,7 @@ export default {
           28.535,
           -82.6546,
           "Weeki Wachee R NR Brooksville, FL",
-          "Weeki_Wachee"
+          "Weeki_Wachee",
         ],
         [
           "02310747",
@@ -182,7 +188,7 @@ export default {
           28.9199,
           -82.714,
           "Crystal R @ Bagley Cove, FL",
-          "Crystal"
+          "Crystal",
         ],
         [
           "02313100",
@@ -192,7 +198,7 @@ export default {
           28.9825,
           -82.775,
           "Rainbow R @ Dunnellon, FL",
-          "Rainbow"
+          "Rainbow",
         ],
         [
           "02320500",
@@ -202,7 +208,7 @@ export default {
           29.2774,
           -83.1818,
           "Suwanne R @ Branford, FL",
-          "Suwanne_Branford"
+          "Suwanne_Branford",
         ],
         [
           "02324000",
@@ -212,7 +218,7 @@ export default {
           29.666,
           -83.4164,
           "Steinhatchee R NR Cross City, FL",
-          "Steinhatchee"
+          "Steinhatchee",
         ],
         [
           "02324400",
@@ -222,7 +228,7 @@ export default {
           29.9699,
           -83.788,
           "Fenholloway R NR Foley, FL",
-          "Fenholloway_Foley"
+          "Fenholloway_Foley",
         ],
         [
           "02325000",
@@ -232,7 +238,7 @@ export default {
           29.9699,
           -83.788,
           "Fenholloway R NR Perry, FL",
-          "Fenholloway_Perry"
+          "Fenholloway_Perry",
         ],
         [
           "02326000",
@@ -242,7 +248,7 @@ export default {
           30.0357,
           -83.929,
           "Econfina R NR Perry, FL",
-          "Econfina"
+          "Econfina",
         ],
         [
           "02330000",
@@ -252,7 +258,7 @@ export default {
           29.9603,
           -84.3383,
           "Ochlockonee R NR Bloxham, FL",
-          "Ochlockonee_Bloxham"
+          "Ochlockonee_Bloxham",
         ],
         [
           "02330150",
@@ -262,7 +268,7 @@ export default {
           29.9603,
           -84.3383,
           "Ochlockonee R NR Smith Creek",
-          "Ochlockonee_Smith_Creek"
+          "Ochlockonee_Smith_Creek",
         ],
         [
           "02359000",
@@ -272,7 +278,7 @@ export default {
           29.5403,
           -84.9721,
           "Chipola R NR Altha, FL",
-          "Chipola"
+          "Chipola",
         ],
         [
           "02359170",
@@ -282,7 +288,7 @@ export default {
           29.729,
           -84.96,
           "Apalachicola R NR Sumatra, FL",
-          "Apalachicola_Sumatra"
+          "Apalachicola_Sumatra",
         ],
         [
           "02366500",
@@ -292,7 +298,7 @@ export default {
           30.3519,
           -86.5167,
           "Choctawhatchee R NR Bruce, FL",
-          "Choctawhatchee_Bruce"
+          "Choctawhatchee_Bruce",
         ],
         [
           "02368000",
@@ -302,7 +308,7 @@ export default {
           30.3084,
           -87.3076,
           "Yellow R @ Milligan, FL",
-          "Yellow_Milligan"
+          "Yellow_Milligan",
         ],
         [
           "02369000",
@@ -312,7 +318,7 @@ export default {
           30.3084,
           -87.3076,
           "Shoal R NR Crestview, FL",
-          "Shoal"
+          "Shoal",
         ],
         [
           "02369600",
@@ -322,7 +328,7 @@ export default {
           30.3084,
           -87.3076,
           "Yellow R NR Milton, FL",
-          "Yellow_Milton"
+          "Yellow_Milton",
         ],
         [
           "02370000",
@@ -332,7 +338,7 @@ export default {
           30.3084,
           -87.3076,
           "Blackwater R NR Baker, FL",
-          "Blackwater"
+          "Blackwater",
         ],
         [
           "02375500",
@@ -342,7 +348,7 @@ export default {
           30.3084,
           -87.3076,
           "Escambia R NR Century, FL",
-          "Escambia_Century"
+          "Escambia_Century",
         ],
         [
           "02376033",
@@ -352,7 +358,7 @@ export default {
           30.3084,
           -87.3076,
           "Escambia R NR Molino, FL",
-          "Escambia_Molino"
+          "Escambia_Molino",
         ],
         [
           "02376500",
@@ -362,7 +368,7 @@ export default {
           30.2529,
           -87.5541,
           "Perdido R @ Barrineau Park, FL",
-          "Perdido"
+          "Perdido",
         ],
         [
           "02428400",
@@ -372,7 +378,7 @@ export default {
           30.2074,
           -88.0606,
           "Alabama R NR Monroeville, AL",
-          "Alabama"
+          "Alabama",
         ],
         [
           "02469761",
@@ -382,7 +388,7 @@ export default {
           30.2074,
           -88.0606,
           "Tombigbee R NR Coffeeville, AL",
-          "Tombigbee"
+          "Tombigbee",
         ],
         [
           "02479000",
@@ -392,7 +398,7 @@ export default {
           30.3607,
           -88.605,
           "Pascagoula R @ Merril, MS",
-          "Pascagoul_Merril"
+          "Pascagoul_Merril",
         ],
         [
           "02479160",
@@ -402,7 +408,7 @@ export default {
           30.3607,
           -88.605,
           "Black Creek R NR Wiggins, MS",
-          "Black_Creek_Wiggins"
+          "Black_Creek_Wiggins",
         ],
         [
           "02479300",
@@ -412,7 +418,7 @@ export default {
           30.3607,
           -88.605,
           "Red Creek R @ Vestry, MS",
-          "Red_Creek"
+          "Red_Creek",
         ],
         [
           "02479310",
@@ -422,7 +428,7 @@ export default {
           30.3607,
           -88.605,
           "Pascagoula R @ Graham Ferry, MS",
-          "Pascagoula_Graham"
+          "Pascagoula_Graham",
         ],
         [
           "02481510",
@@ -432,7 +438,7 @@ export default {
           30.2819,
           -89.3123,
           "Wolf R NR Landon, MS",
-          "Wolf"
+          "Wolf",
         ],
         [
           "02489500",
@@ -442,7 +448,7 @@ export default {
           30.1743,
           -89.5246,
           "Pearl R NR Bogalusa, LA",
-          "Pearl"
+          "Pearl",
         ],
         [
           "02492000",
@@ -452,7 +458,7 @@ export default {
           30.1743,
           -89.5246,
           "Bogue Chitto R NR Bush, LA",
-          "Bogue_Chitto"
+          "Bogue_Chitto",
         ],
         [
           "07375500",
@@ -462,7 +468,7 @@ export default {
           30.1413,
           -89.6126,
           "Tangipahoa R @ Robert, LA",
-          "Tangipahoa"
+          "Tangipahoa",
         ],
         [
           "07378500",
@@ -472,7 +478,7 @@ export default {
           30.1413,
           -89.6126,
           "Amite R NR Denham Springs, LA",
-          "Amite"
+          "Amite",
         ],
         [
           "07385500",
@@ -482,7 +488,7 @@ export default {
           29.427,
           -91.4845,
           "Bayou Teche R @ Arnaudville, LA",
-          "Bayou_Teche"
+          "Bayou_Teche",
         ],
         [
           "07386980",
@@ -492,7 +498,7 @@ export default {
           29.7378,
           -92.1125,
           "Vermillion R @ Perry, LA",
-          "Vermillion_River"
+          "Vermillion_River",
         ],
         [
           "08012000",
@@ -502,7 +508,7 @@ export default {
           29.7213,
           -93.0113,
           "Bayou Nezpique NR Basile, LA",
-          "Bayou_Nezpique"
+          "Bayou_Nezpique",
         ],
         [
           "08015500",
@@ -512,7 +518,7 @@ export default {
           29.7446,
           -93.3429,
           "Calcasieu R NR Kinder, LA",
-          "Calcasieu"
+          "Calcasieu",
         ],
         [
           "08030500",
@@ -522,7 +528,7 @@ export default {
           29.6109,
           -93.8272,
           "Sabine R NR Ruliff, TX",
-          "Sabine"
+          "Sabine",
         ],
         [
           "08041000",
@@ -532,7 +538,7 @@ export default {
           29.6109,
           -93.8272,
           "Neches R @ Evadale, TX",
-          "Neches"
+          "Neches",
         ],
         [
           "08041500",
@@ -542,7 +548,7 @@ export default {
           29.6109,
           -93.8272,
           "Village Creek NR Kountze , TX",
-          "Village_Creek"
+          "Village_Creek",
         ],
         [
           "08066500",
@@ -552,7 +558,7 @@ export default {
           29.346,
           -94.7131,
           "Trinity R @ Romayor, TX",
-          "Trinity"
+          "Trinity",
         ],
         [
           "08068090",
@@ -562,7 +568,7 @@ export default {
           30.438,
           -95.0,
           "San Jacinto R NR Porter, TX",
-          "San_Jacinto_Porter"
+          "San_Jacinto_Porter",
         ],
         [
           "08075000",
@@ -572,7 +578,7 @@ export default {
           29.346,
           -94.7131,
           "Brays Bayou @ Houston, TX",
-          "Brays_Bayou"
+          "Brays_Bayou",
         ],
         [
           "08116650",
@@ -582,7 +588,7 @@ export default {
           28.8739,
           -95.3791,
           "Brazos R NR Rosharon, TX",
-          "Brazos"
+          "Brazos",
         ],
         [
           "08117500",
@@ -592,7 +598,7 @@ export default {
           28.8439,
           -95.468,
           "San Bernard R NR Boling, TX",
-          "San_Bernard"
+          "San_Bernard",
         ],
         [
           "08162500",
@@ -602,7 +608,7 @@ export default {
           28.4125,
           -96.3176,
           "Colorado R NR Bay City, TX",
-          "Colorado"
+          "Colorado",
         ],
         [
           "08164000",
@@ -612,7 +618,7 @@ export default {
           28.4125,
           -96.3176,
           "Lavaca R NR Edna, TX",
-          "Lavaca"
+          "Lavaca",
         ],
         [
           "08176500",
@@ -622,7 +628,7 @@ export default {
           28.4125,
           -96.3176,
           "Guadalupe R @ Victoria, TX",
-          "Guadalupe"
+          "Guadalupe",
         ],
         [
           "08188500",
@@ -632,7 +638,7 @@ export default {
           27.8203,
           -97.0211,
           "San Antonio R @ Goliad, TX",
-          "San_Antonio"
+          "San_Antonio",
         ],
         [
           "08189500",
@@ -642,7 +648,7 @@ export default {
           27.8203,
           -97.0211,
           "Mission R @ Refugio, TX",
-          "Mission"
+          "Mission",
         ],
         [
           "08189700",
@@ -652,7 +658,7 @@ export default {
           27.8203,
           -97.0211,
           "Aransas R NR Skidmore, TX",
-          "Aransas"
+          "Aransas",
         ],
         [
           "08211000",
@@ -662,7 +668,7 @@ export default {
           27.8203,
           -97.0211,
           "Nueces R NR Mathis, TX",
-          "Nueces"
+          "Nueces",
         ],
         [
           "02358000",
@@ -672,7 +678,7 @@ export default {
           29.729,
           -84.96,
           "Apalachicola R @ Chattahoochee, FL",
-          "Apalachicola_Chattahoo"
+          "Apalachicola_Chattahoo",
         ],
         [
           "02365500",
@@ -682,7 +688,7 @@ export default {
           30.3519,
           -86.5167,
           "Choctawhatchee R @ Caryville, FL",
-          "Choctawhatchee_Caryvil"
+          "Choctawhatchee_Caryvil",
         ],
         [
           "08068000",
@@ -692,7 +698,7 @@ export default {
           30.438,
           -95.0,
           "San Jacinto NR Conroe, TX",
-          "San_Jacinto_Conroe"
+          "San_Jacinto_Conroe",
         ],
         [
           "02319500",
@@ -702,7 +708,7 @@ export default {
           29.2774,
           -83.1818,
           "Suwanne @ Ellaville, FL",
-          "Suwanne_Ellaville"
+          "Suwanne_Ellaville",
         ],
         [
           "02479130",
@@ -712,7 +718,7 @@ export default {
           30.3607,
           -88.605,
           "Black Creek NR Brooklyn, MS",
-          "Black_Creek_Brooklyn"
+          "Black_Creek_Brooklyn",
         ],
         [
           "252230081021300",
@@ -722,8 +728,8 @@ export default {
           25.3533,
           -81.1173,
           "Shark River @ Monroe County, FL",
-          "Shark"
-        ]
+          "Shark",
+        ],
       ];
       //console.log(test_id);
       var marker = [];
@@ -742,7 +748,7 @@ export default {
           scaleControl: false,
           streetViewControl: false,
           //mapTypeId: google.maps.MapTypeId.HYBRID
-          mapTypeId: google.maps.MapTypeId.TERRAIN
+          mapTypeId: google.maps.MapTypeId.TERRAIN,
         };
         map = new google.maps.Map(
           document.getElementById("gommap"),
@@ -750,13 +756,13 @@ export default {
         );
         setMarkers(test_id);
 
-        var onChangeHandler = function() {
+        var onChangeHandler = function () {
           var cId = document.getElementById("rivermenu").value;
           marker[cId].setAnimation(google.maps.Animation.BOUNCE); //** set up the marker animation as the highlighter **//
           marker_mouth[cId].setAnimation(google.maps.Animation.BOUNCE); //** set up the marker animation as the highlighter **//
           map.panTo(marker[cId].getPosition()); //** used selected marker location as the map center.**//
           map.setZoom(8); //** zoom in from level 6 to level 8 **//
-          google.maps.event.addListener(marker[cId], "mouseover", function() {
+          google.maps.event.addListener(marker[cId], "mouseover", function () {
             map.info_clik.close(), marker[cId].setAnimation(null); //** remove the marker animation **//
             marker_mouth[cId].setAnimation(null); //** remove the marker animation **//
           });
@@ -786,7 +792,7 @@ export default {
           marker_mouth[i] = new google.maps.Marker({
             map: map,
             icon: pin_grn,
-            position: latlng
+            position: latlng,
           });
           marker_mouth[i].over =
             '<div id="Rmouth_over">' +
@@ -802,7 +808,7 @@ export default {
             map: map,
             title: site_id,
             icon: eval(pin),
-            position: latlng
+            position: latlng,
           });
           marker[i].clik =
             '<div id="content">' +
@@ -845,22 +851,22 @@ export default {
 
           map.info_clik = new google.maps.InfoWindow();
           map.info_over = new google.maps.InfoWindow({
-            maxWidth: 250
+            maxWidth: 250,
           });
 
-          google.maps.event.addListener(marker[i], "click", function() {
+          google.maps.event.addListener(marker[i], "click", function () {
             map.info_over.close(),
               map.info_clik.setContent(this.clik),
               map.info_clik.open(map, this);
           });
-          google.maps.event.addListener(marker[i], "mouseover", function() {
+          google.maps.event.addListener(marker[i], "mouseover", function () {
             map.info_clik.close(),
               map.info_over.setContent(this.over),
               map.info_over.open(map, this);
             //marker[i].setAnimation(google.maps.Animation.BOUNCE);	//** set up the marker animation as the highlighter **//
             //marker_mouth[i].setAnimation(google.maps.Animation.BOUNCE);	//** set up the marker animation as the highlighter **//
           });
-          google.maps.event.addListener(marker[i], "mouseout", function() {
+          google.maps.event.addListener(marker[i], "mouseout", function () {
             map.info_over.close();
             //marker[i].setAnimation(null);	//** set up the marker animation as the highlighter **//
             //marker_mouth[i].setAnimation(null);	//** set up the marker animation as the highlighter **//
@@ -868,7 +874,7 @@ export default {
           google.maps.event.addListener(
             marker_mouth[i],
             "mouseover",
-            function() {
+            function () {
               map.info_clik.close(),
                 map.info_over.setContent(this.over),
                 map.info_over.open(map, this);
@@ -878,7 +884,7 @@ export default {
           google.maps.event.addListener(
             marker_mouth[i],
             "mouseout",
-            function() {
+            function () {
               map.info_over.close();
               //marker[i].setAnimation(null);	//** set up the marker animation as the highlighter **//
             }
@@ -887,14 +893,14 @@ export default {
       }
 
       startMap();
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
 .canvas {
-  font-size: 16px;
+  font-size: 18px;
 }
 .centered span {
   display: none;
@@ -902,9 +908,9 @@ export default {
 .centered:after {
   content: "River Discharge";
 }
-#map_canvas {
-  min-height: 600px;
-  height: 600px;
+.map_canvas {
+  min-height: 700px;
+  height: 700px;
   width: 100%;
 }
 #floating-panel {

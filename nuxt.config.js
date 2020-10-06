@@ -148,9 +148,6 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    "@nuxtjs/axios",
-    "@nuxtjs/pwa",
-    "@nuxtjs/sentry",
     // cache with options
     [
       "@nuxtjs/component-cache",
@@ -168,11 +165,6 @@ module.exports = {
     bootstrapCSS: true, // or false for customized CSS
     bootstrapVueCSS: true
   },
-
-  /*
-   ** Axios module configuration
-   */
-  axios: {},
   router: {
     base: '/river_discharge/'
   },
@@ -185,7 +177,23 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-
+      const vueLoader = config.module.rules.find(rule => rule.loader === 'vue-loader');
+      vueLoader.options.transformAssetUrls = {
+        video: ['src', 'poster'],
+        source: 'src',
+        img: 'src',
+        image: 'xlink:href',
+        'b-img': 'src',
+        'b-img-lazy': ['src', 'blank-src'],
+        'b-card': 'img-src',
+        'b-card-img': 'img-src',
+        'b-card-img-lazy': ['src', 'blank-src'],
+        'b-carousel-slide': 'img-src',
+        'b-embed': 'src'
+      }
+    },
+    babel: {
+      compact: true
     }
   }
 }
