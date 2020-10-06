@@ -18,7 +18,8 @@
     "event-stream": "^4.0.1",
     "nuxt": "^2.14.6",
     "nuxt-google-maps-module": "^1.6.0",
-    "portal-vue": "^2.1.7"
+    "portal-vue": "^2.1.7",
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "jquery": "^3.5.1",
