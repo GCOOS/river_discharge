@@ -22,7 +22,7 @@ module.exports = {
     link: [{
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/ssh/favicon.ico'
+        href: '/river_discharge/favicon.ico'
       },
       {
         /* Google Font */
