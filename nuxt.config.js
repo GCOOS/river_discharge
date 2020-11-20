@@ -25,11 +25,6 @@ module.exports = {
         href: '/ssh/favicon.ico'
       },
       {
-        /* Adobe Proxima Nova */
-        rel: "stylesheet",
-        href: "https://use.typekit.net/pel5bpx.css"
-      },
-      {
         /* Google Font */
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
@@ -51,19 +46,13 @@ module.exports = {
         /* Leaflet Fullscreen Button */
         rel: "stylesheet",
         href: "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
-      }, {
-        /* Leaflet Marker Cluster */
-        rel: "stylesheet",
-        href: "https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css"
-      }, {
+      }, 
+      {
         /* Leaflet Gesture Control */
         rel: "stylesheet",
         href: "https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
-      }, {
-        /* Leaflet Time Dimesion */
-        rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.min.css"
-      }, {
+      }, 
+      {
         /* jQuery UI */
         rel: "stylesheet",
         href: "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -84,10 +73,6 @@ module.exports = {
       {
         /* Leaflet Fullscreen */
         src: "https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"
-      },
-      {
-        /* Leaflet Omnivore */
-        src: "https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js"
       },
       {
         /* Leaflet Gesture Control */
@@ -158,13 +143,6 @@ module.exports = {
     ],
     "bootstrap-vue/nuxt",
   ],
-  /*
-   ** Bootstrap-vue configuration
-   */
-  bootstrapVue: {
-    bootstrapCSS: true, // or false for customized CSS
-    bootstrapVueCSS: true
-  },
   router: {
     base: '/river_discharge/'
   },

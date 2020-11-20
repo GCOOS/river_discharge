@@ -4,7 +4,7 @@
       <h1 style="text-align: center">River Discharge</h1>
       <b-row>
         <b-col style="text-align: center">
-          <h3>Records from 61 rivers that discharge into the Gulf of Mexico</h3>
+          <h4>Records from 61 rivers that discharge into the Gulf of Mexico</h4>
 
           <a
             data-mce-href="https://geo.gcoos.org/data/riverdischarge/gom_discharge_1900_present.nc"
