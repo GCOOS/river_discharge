@@ -1,9 +1,9 @@
 <template>
   <div class="canvas">
-    <b-container>
-      <h1 style="text-align: center">River Discharge</h1>
+    <b-container fluid>
+      <h1 style="margin-top:-5px">River Discharge</h1>
       <b-row>
-        <b-col style="text-align: center">
+        <b-col>
           <h4>Records from 61 rivers that discharge into the Gulf of Mexico</h4>
 
           <a
@@ -12,7 +12,7 @@
             target="_blank"
             >&nbsp;NetCDF File</a
           >
-          <br />
+          <br/>
           <a
             data-mce-href="https://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
             href="http://geo.gcoos.org/data/riverdischarge/gomriver2.tar.Z"
@@ -21,8 +21,7 @@
           >&nbsp;(tar.z)
         </b-col>
       </b-row>
-    </b-container>
-    <b-container fluid>
+      <hr>
       <b-row>
         <b-col>
           <div id="gommap" class="map_canvas">
